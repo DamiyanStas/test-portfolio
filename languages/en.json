@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "about": "ABOUT ME",
+    "services": "SERVICES",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "contacts": "CONTACTS"
+  },
+
+  "about": {
+    "hello": "HELLO, MY NAME IS",
+    "name": "Damianopulo Stanislav",
+    "profession" : "WEB DEVELOPER",
+    "education" : "Сompleted the course \"Development and Promotion of Web projects\" at the Computer Academy TOP"
+  },
+  
+
+  "accordion": {
+    "button": {
+      "open": "Education",
+      "close": "Close"
+    },
+    "diploma": "Diplomas",
+    "first-diploma": "From 15.04.2024 to 30.04.2025, I completed online training in the course “Development and Promotion of Web Projects” at Autonomous non‑profit organization for additional professional education “Academy TOP”",
+    "first-number" : "Diploma number: SCRF-250781",
+    "second-diploma": "Professional retraining diploma issued by the autonomous non-profit supplementary vocational training organization \"TOP Academy\"",
+    "second-number" : "Diploma number: 772425293537",
+    "date" : "Issued: 23.07.2025",
+    "text" : "The diploma grants the right to engage in professional activity in the field of web development"
+  },
+
+
+  "services": {
+    "title": "My",
+    "title-strong": "services",
+
+    
+      "design": {
+        "title": "UX/UI Design",
+        "description": "Creating logos and website mockups with adaptive design for mobile devices"
+      },
+      "layout": {
+        "title" : "Adaptive layout",
+        "description": "Creating single‑page websites (landing pages), transferring ready‑made layouts into clean, valid code"
+      },
+      "seo": {
+        "title" : "SEO",
+        "description": "SEO optimization to improve search queries for websites on the WordPress CMS"
+      },
+      "cms": {
+        "title" : "CMS",
+        "description": "Creating websites using the WordPress content management system"
+      }
+
+  },
+
+
+  "skills": {
+    "title": "Professional",
+    "title-strong": "skills"
+  },
+
+
+  "projects": {
+    "title": "Some of my",
+    "title-strong": "projects",
+
+    "name-todo" : "To Do list",
+    "description-todo" : "A simple task list in React with the ability to add, delete tasks, and mark them as completed.", 
+
+    "name-logos": "Logos",
+    "description-logos": "An example of work on designing various logos.",
+
+    "name-landing": "Landing page",
+    "description-landing": "An example of working to create a single-page site.",
+
+    "name-graduation" : "Graduation project",
+    "description-graduation" : "Diploma project using the WordPress CMS.",
+    
+    "btn-view" : "VIEW THE PROJECT",
+
+    "title-other" : "You can also check out other examples of my work.",
+    "btn-other" : "Other projects"
+  },
+
+
+  "contacts": {
+    "title": "My",
+    "title-strong": "contacts",
+    "location": "Location",
+    "city": "Russia, Gelendzhik",
+    "email": "Email",
+    "phone": "Phone"
+  },
+
+  "footer" : {
+    "copyright" : "PORTFOLIO © 2026 DAMIANOPULO STANISLAV"
+  }
+}
+

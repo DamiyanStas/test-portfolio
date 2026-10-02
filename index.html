@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#main"><img id="logo" src="./images/PORTFOLIO-logo.png" alt="Portfolio"></a>
+            </div>
+
+            <div class="nav-container">
+                <div class="nav-button-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="nav">
+                    <div class="container-list">
+                        <ul class="nav-list">
+                            <li><a class="nav-link" href="#main" data-i18n-key="navigation.about">ABOUT ME</a></li>
+                            <li><a class="nav-link" href="#services" data-i18n-key="navigation.services">SERVICES</a>
+                            </li>
+                            <!-- <li><a class="nav-link" href="#skills" data-i18n-key="navigation.skills">SKILLS</a></li> -->
+                            <li><a class="nav-link" href="#projects" data-i18n-key="navigation.projects">PROJECTS</a>
+                            </li>
+                            <li><a class="nav-link" href="#contacts" data-i18n-key="navigation.contacts">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- переключатель темы -->
+            <div class="setting-container">
+                <div class="container-mode">
+                    <button onclick="toggleTheme()" class="dark-mode-btn" name="mode"></button>
+                </div>
+                <!-- Переключатель языков -->
+                <div class="lang-switcher">
+                    <div id="language-display" class="custom-select" tabindex="0">
+                        <span id="selected-lang" class="container-flag">
+                            <img id="flag-icon" class="flag" src="./images/Flags/RU.png" alt="RU">
+                        </span>
+                        <div id="language-options" class="options">
+                            <div class="option" data-lang="ru"><img class="flag" src="./images/Flags/RU.png" alt="RU">РУ
+                            </div>
+                            <div class="option" data-lang="en"><img class="flag" src="./images/Flags/EN.png" alt="EN">EN
+                            </div>
+                            <div class="option" data-lang="el"><img class="flag" src="./images/Flags/EL.png" alt="EL">ΕΛ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        
+        <section class="about-container">
+
+            <div class="about">
+                <h1 class="title about-text" data-i18n-key="about.hello">HELLO, MY NAME IS</h1>
+                <h1 class="title about-text" data-i18n-key="about.name">Stanislav</h1>
+                <h1 class="title"><strong class="strong" data-i18n-key="about.profession">WEB DEVELOPER</strong></h1>
+                <div class="education">
+                    <!-- <p class="title-2 about-text" data-i18n-key="about.education">
+                        Сompleted the "Development and Promotion of Web projects" course at the Computer Academy TOP
+                    </p> -->
+                    <button id="toggle-Accordion" class="btn" data-i18n-key="accordion.button" aria-expanded="false">
+                        <span data-i18n-key="accordion.button">Education</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- --------------- ACCORDION --------------- -->
+
+        <section class="accord">
+            <div id="accordion-Content" class="content-hidden">
+                <div class="bg-accordion">
+                    <h2 class="title-diploma" data-i18n-key="accordion.diploma">Дипломы</h2>
+                    <div class="diploma-container">
+                        <p class="subtitle" data-i18n-key="accordion.first-diploma">С 15.04.2024 по 30.04.2025 прошел онлайн обучение по курсу "Разработка и
+                            продвижение WEB-проектов" в АНО ДПО "Академия ТОП"</p>
+                        <p class="number-diploma" data-i18n-key="accordion.first-number">Номер диплома: SCRF-250781</p>
+                    </div>
+                    <div class="diploma-container">
+                        <p class="subtitle" data-i18n-key="accordion.second-diploma">Диплом о профессиональной переподготовке в АНО ДПО "Академия ТОП"</p>
+                        <p class="number-diploma" data-i18n-key="accordion.second-number">Номер диплома: 772425293537</p>
+                        <p class="subtitle" data-i18n-key="accordion.date">Выдан: 23.07.2025</p>
+                        <p class="title" data-i18n-key="accordion.text">Диплом предоставляет право на ведение профессиональной деятельности в сфере
+                            "Web-разработка"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- --------------- SERVICES --------------- -->
+
+        <section id="services" class="services">
+
+            <div class="bg-title">
+                <div class="title-services">
+                    <h3 class="title" data-i18n-key="services.title">My</h3>&emsp;
+                    <strong class="title strong" data-i18n-key="services.title-strong">Services</strong>
+                </div>
+            </div>
+
+            <div class="services-container">
+                <div class="card-service">
+                    <img id="icons-services" class="icons-services" src="./images/icons/design-dark.png" alt="UI/UX">
+                    <h4 class="card-title" data-i18n-key="services.design.title">UX/UI Design</h4>
+                    <p class="card-text" data-i18n-key="services.design.description">Создание логотипов, макетов сайтов с адаптивным дизайном под мобильные устройства</p>
+                </div>
+
+                <div class="card-service">
+                    <img id="icons-services-2" class="icons-services" src="./images/icons/layout-dark.png" alt="Layout">
+                    <h4 class="card-title" data-i18n-key="services.layout.title">Layout</h4>
+                    <p class="card-text" data-i18n-key="services.layout.description">Создание одностраничных сайтов (лендингов), перенос готовых макетов в чистый, валидный код</p>
+                </div>
+
+                <div class="card-service">
+                    <img id="icons-services-3" class="icons-services" src="./images/icons/seo-dark.png" alt="SEO">
+                    <h4 class="card-title" data-i18n-key="services.seo.title">SEO</h4>
+                    <p class="card-text" data-i18n-key="services.seo.description">SEO-оптимизация для улучшения поисковых запросов для сайтов на CMS Wordpress</p>
+                </div>
+
+                <div class="card-service">
+                    <img id="icons-services-4" class="icons-services" src="./images/icons/CMS-dark.png" alt="CMS">
+                    <h4 class="card-title" data-i18n-key="services.cms.title">CMS</h4>
+                    <p class="card-text" data-i18n-key="services.cms.description">Создание сайтов с использованием системы управления контентом WordPress</p>
+                </div>
+
+                <!-- <div class="card-service title-2">Создание одностраничных сайтов-лендингов</div>
+                <div class="card-service title-2">Верстка сайтов и макетов</div>
+
+                <div class="card-service">
+                    <h4 class="card-title">Тестирование и оптимизация</h4>
+                    <p class="card-text">Проверка готового сайта на корректность работы в различных браузерах (Chrome,
+                        Firefox, Safari, Яндекс).
+                        Оптимизации для ускорения загрузки (например, сжатие изображений). А также базовая настройка
+                        мета тегов
+                        для улучшения поисковых запросов.
+                    </p>
+                </div>
+
+                <div class="card-service">
+                    <h4 class="card-title">UX/UI дизайнер</h4>
+                    <p class="card-text">Создание логотипов, дизайна макетов одностраничных сайтов (лэндингов) в Figma с
+                        адаптацией под мобильные устройства.
+                    </p>
+                </div>
+
+                <div class="card-service title-2">UI/UX Design</div> -->
+            </div>
+        </section>
+
+        <!-- --------------- SKILLS --------------- -->
+
+        <section id="skills" class="skills">
+
+            <div class="bg-title">
+                <div class="title-skills">
+                    <h3 class="title" data-i18n-key="skills.title">Professional</h3>&emsp;
+                    <strong class="title strong" data-i18n-key="skills.title-strong">skills</strong>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <div class="card-skill">
+                    <img src="./images/icons/Figma.svg" alt="Figma" class="icon">
+                    <h4 class="">Figma</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/HTML.svg" alt="HTML" class="icon">
+                    <h4 class="">HTML</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/CSS.svg" alt="CSS" class="icon">
+                    <h4 class="">CSS</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/JavaScript.svg" alt="JavaScript" class="icon">
+                    <h4 class="">JavaScript</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/React.svg" alt="React" class="icon">
+                    <h4 class="">React</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/PHP.svg" alt="PHP" class="icon">
+                    <h4 class="">PHP</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/Laravel.svg" alt="Laravel" class="icon">
+                    <h4 class="">Laravel</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/MySQL.svg" alt="MySQL" class="icon">
+                    <h4 class="">MySQL</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/Wordpress.svg" alt="WordPress" class="icon">
+                    <h4 class="">WordPress</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/Tailwind.svg" alt="Tailwind" class="icon">
+                    <h4 class="">Tailwind</h4>
+                </div>
+                <div class="card-skill">
+                    <img src="./images/icons/Bootstrap.svg" alt="Bootstrap" class="icon">
+                    <h4 class="">Bootstrap</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- --------------- PROJECTS --------------- -->
+
+        <div class="pro" id="projects">
+
+            <div class="bg-title">
+                <div class="title-projects">
+                    <h3 class="title" data-i18n-key="projects.title">Some of my</h3>&emsp;
+                    <strong class="title strong" data-i18n-key="projects.title-strong">projects</strong>
+                </div>
+            </div>
+
+            <section class="projects">
+                <div class="project-container">
+                    <div class="image-container">
+                        <div class="bg-card">
+                            <img src="./images/projects/Todo_list.png" alt="image" class="img" />
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <div class="description">
+                            <h4 class="title-project" data-i18n-key="projects.name-todo">Todo List</h4>
+                            <p data-i18n-key="projects.description-todo">
+                                Простой список задач на React, c возможностью добавлять, удалять
+                                задачи и отмечать их как выполненные.
+                            </p>
+                        </div>
+                        <div class="description-skills">
+                            <img src="./images/iconsProjects/HTML_1.png" alt="HTML" class="icons-skills">
+                            <img src="./images/iconsProjects/CSS_1.png" alt="CSS" class="icons-skills">
+                            <img src="./images/iconsProjects/React_1.png" alt="React" class="icons-skills">
+                        </div>
+                        <a class="btn-project btn-description" data-i18n-key="projects.btn-view" target="_blank"
+                            rel="noopener noreferrer" href="https://github.com/DamiyanStas/Todo-list.git">
+                            <div>
+                                VIEW THE PROJECT
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="image-container">
+                        <div class="bg-card">
+                            <img src="./images/projects/Logos.png" alt="image" class="img" />
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <div class="description">
+                            <h4 class="title-project" data-i18n-key="projects.name-logos">Logos</h4>
+                            <p data-i18n-key="projects.description-logos">
+                                Пример работы по созданию дизайна различных логотипов.
+                            </p>
+                        </div>
+                        <div class="description-skills">
+                            <img src="./images/iconsProjects/Figma_1.png" alt="Figma" class="icons-skills">
+                        </div>
+                        <a class="btn-project btn-description" data-i18n-key="projects.btn-view" target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.figma.com/design/vhdCKXe29Fpom8uRuWeSsh/LOGOS?node-id=0-1&t=uB2GKU8FnIrDZkUi-1">
+                            <div>
+                                VIEW THE PROJECT
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="image-container">
+                        <div class="bg-card">
+                            <img src="./images/projects/Landing_page.png" alt="image" class="img" />
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <div class="description">
+                            <h4 class="title-project" data-i18n-key="projects.name-landing">Landing page</h4>
+                            <p data-i18n-key="projects.description-landing">
+                                Пример работы по созданию одностраничного сайта.
+                            </p>
+                        </div>
+                        <div class="description-skills">
+                            <img src="./images/iconsProjects/HTML_1.png" alt="HTML" class="icons-skills">
+                            <img src="./images/iconsProjects/CSS_1.png" alt="CSS" class="icons-skills">
+                            <img src="./images/iconsProjects/JavaScript_1.png" alt="JavaScript" class="icons-skills">
+                        </div>
+                        <a class="btn-project btn-description" data-i18n-key="projects.btn-view" target="_blank"
+                            rel="noopener noreferrer" href="https://github.com/DamiyanStas/Landing-page">
+                            <div>
+                                VIEW THE PROJECT
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="image-container">
+                        <div class="bg-card">
+                            <img src="./images/projects/Project_DS.png" alt="image" class="img" />
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <div class="description">
+                            <h4 class="title-project" data-i18n-key="projects.name-graduation">Graduation project</h4>
+                            <p data-i18n-key="projects.description-graduation">
+                                Дипломный проект с использованием CMS WordPress.
+                            </p>
+                        </div>
+                        <div class="description-skills">
+                            <img src="./images/iconsProjects/Wordpress_1.png" alt="Figma" class="icons-skills">
+                        </div>
+                        <a class="btn-project btn-description" data-i18n-key="projects.btn-view" target="_blank"
+                            rel="noopener noreferrer"
+                            href="#">
+                            <div>
+                                VIEW THE PROJECT
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="other-projects">
+            <h3 class="title-2" data-i18n-key="projects.title-other">
+                Также вы можете ознакомиться с другими примерами
+                моих работ
+            </h3>
+            <a class="btn-other" data-i18n-key="projects.btn-other"
+                href="https://github.com/DamiyanStas?tab=repositories">
+                Other projects
+            </a>
+        </section>
+
+        <!-- --------------- CONTACTS --------------- -->
+
+        <section id="contacts" class="contacts">
+            <!-- <h3 class="title">My <strong class="strong">contacts</strong></h3> -->
+            <div class="bg-title">
+                <div class="title-contacts">
+                    <h3 class="title" data-i18n-key="contacts.title">My</h3>&emsp;
+                    <strong class="title strong" data-i18n-key="contacts.title-strong">contacts</strong>
+                </div>
+            </div>
+
+            <div class="contacts-container">
+                <div class="location-container">
+                    <h4 class="subtitle-contacts" data-i18n-key="contacts.location">LOCATION</h4>
+                    <p class="text" data-i18n-key="contacts.city">Russia, Gelendzhik</p>
+                </div>
+                <div class="contact-container">
+                    <h4 class="subtitle-contacts" data-i18n-key="contacts.email">Email</h4>
+                    <a href="" class="text">123@yandex.ru</a>
+                    <a href="" class="text">456@yandex.ru</a>
+                </div>
+                <div class="contact-container">
+                    <h4 class="subtitle-contacts" data-i18n-key="contacts.phone">Phone</h4>
+                    <p class="text">+7 (000) 000-00-00</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="text-footer" data-i18n-key="footer.copyright">PORTFOLIO &copy; DAMIANOPULO STANISLAV</p>
+        </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
